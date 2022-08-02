@@ -1,0 +1,61 @@
+/***************   POLICES ET BOX-SIZING   ****************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap');
+
+* {
+    font-family: Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/***************   HEADER   ****************/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 3px rgb(187, 185, 185);
+}
+
+#logo {
+    width: 100%;
+}
+
+header a {
+    width: 50%;
+    margin: 20px 0px 10px 0px;
+}
+
+
+/***************   EXPLORER   ****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************   FONCTIONNEMENT   ****************/
+
+
+/***************   RESTAURANTS   ****************/
+
+
+
+/***************   FOOTER   ****************/
