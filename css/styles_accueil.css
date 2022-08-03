@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-p, h1, h2 {
+p, h1, h2, h3 {
     margin: 0;
 } 
 
@@ -97,6 +97,7 @@ main {
     /***************   FONCTIONNEMENT   ****************/
 .fonctionnement {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -163,24 +164,111 @@ main {
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
     /***************   RESTAURANTS   ****************/
+.restaurants {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 50px 20px;
+}
+    .restaurants h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .deck_restaurants {
+        display: flex;
+        flex-direction: column;
+    }
+        .card_restaurant {
+            text-decoration: none;
+            color: black;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 3px 7px #cecece;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .card_restaurant:hover {
+            box-shadow: 0 6px 7px #a8a7a7;
+        }
+            .card_img {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                position: relative;
+            }
+                .card_img img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .card_img p {
+                    background-color: #99E2D0;
+                    color: #139273;
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 7px 10px;
+                    border-radius: 3px;
+                    position: absolute;
+                    right: 5%;
+                    top: 10%;
+                }
+            .card_body {
+                width: 100%;
+                height: 30%;
+                padding-left: 15px;
+                padding-right: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .card_body h3 {
+                    font-size: 17px;
+                    font-weight: 800;
+                    margin-bottom: 5px;
+                }
+                .card_body p {
+                    font-weight: 300;
+                    font-size: 15px;
+                }
+                .card_body i {
+                    font-size: 25px;
+                }
 
 
 /***************   FOOTER   ****************/
+footer {
+    width: 100%;
+    background-color: #353535;
+    padding: 10px 0px 50px 20px;
+    display: flex;
+    flex-direction: column;
+}
+    footer h2 {
+        color: white;
+        font-family: Shrikhand, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+
+    footer a {
+        margin-bottom: 10px;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+    }
+        .fa-utensils {
+            font-size: 12px;
+            margin-right: 15px;
+        }
+        .fa-handshake-angle {
+            font-size: 12px;
+            margin-right: 11px;
+        }
