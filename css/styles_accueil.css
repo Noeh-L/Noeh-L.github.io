@@ -127,10 +127,9 @@ main {
             position: relative;
         }
         .card_fonct:hover {
-            cursor: pointer;
             background-color: #F5EDFF;
         }
-            .fonct_body i:hover {
+            .card_fonct:hover i {
                 color: #9356DC;
             }
             .fonct_body {
@@ -141,6 +140,9 @@ main {
                     margin-left: 25px;
                     font-size: 16px;
                     font-weight: 600;
+                }
+                .fonct_body p:hover {
+                    cursor: default;
                 }
                 .fonct_body i {
                     margin-left: 25px;

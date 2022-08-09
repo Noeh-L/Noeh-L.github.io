@@ -1,0 +1,85 @@
+/***************   POLICES ET BOX-SIZING   ****************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap');
+
+* {
+    font-family: Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+} 
+
+/***************   HEADER   ****************/
+
+
+
+
+
+/***************   MAIN   ****************/
+main {
+	background-color: #F6F6F6;
+	width: 100%;
+}
+
+	/***************   Photo   ****************/
+.photo_restau img {
+	width: 100%;
+}
+
+	/***************   Titre   ****************/
+.titre {
+	margin-bottom: 30px;
+}
+
+	h2 {
+		margin-bottom: 5px;
+	}
+
+	.trait_vert {
+		border-bottom: #99E2D0 5px solid;
+		width: 50px;
+	}
+
+
+	/***************   Le menu   **************/
+
+
+
+
+
+
+/***************   FOOTER   ****************/
+footer {
+    width: 100%;
+    background-color: #353535;
+    padding: 10px 0px 35px 20px;
+    display: flex;
+    flex-direction: column;
+}
+    footer h2 {
+        color: white;
+        font-family: Shrikhand, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+
+    footer a {
+        margin-bottom: 10px;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+    }
+    footer a:hover {
+        color: #FF79DA;
+    }
+        .fa-utensils {
+            font-size: 12px;
+            margin-right: 15px;
+        }
+        .fa-handshake-angle {
+            font-size: 12px;
+            margin-right: 11px;
+        }
