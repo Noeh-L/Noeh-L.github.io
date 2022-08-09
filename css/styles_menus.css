@@ -11,41 +11,157 @@ p, h1, h2, h3 {
 } 
 
 /***************   HEADER   ****************/
-
-
-
+header {
+	display: flex;
+	position: relative;
+}
+	header i {
+		position: absolute;
+		top: 36%;
+		font-size: 24px;
+		color: black;
+		margin-left: 30px;
+	}
+	header i:hover {
+		color: #FF79DA;
+	}
+	#logo {
+		width: 50%;
+		margin: 20px auto 15px;
+	}
 
 
 /***************   MAIN   ****************/
 main {
-	background-color: #F6F6F6;
 	width: 100%;
+	background-color: #F6F6F6;
 }
 
 	/***************   Photo   ****************/
-.photo_restau img {
-	width: 100%;
-}
-
-	/***************   Titre   ****************/
-.titre {
-	margin-bottom: 30px;
-}
-
-	h2 {
-		margin-bottom: 5px;
+	.photo_restau img {
+		width: 100%;
 	}
 
-	.trait_vert {
-		border-bottom: #99E2D0 5px solid;
-		width: 50px;
-	}
+	/***************   Menu   ****************/
+	.menu {
+		width: 100%;
+		background-color: #F6F6F6;
+		border-radius: 40px 40px 0px 0px;
+		padding: 45px 15px 0px 15px;
+		position: relative;
+		top: -50px;
+		display: flex;
+		flex-direction: column;
+	}	
+
+		/***************   Nom du resaurant   ****************/
+		.nom_restau {
+			display: flex;
+			justify-content: space-between;
+			padding-right: 15px;
+			margin-bottom: 40px;
+		}
+
+			h1 {
+				font-family: Shrikhand, Arial, sans-serif;
+				font-weight: 500;
+				font-size: 30px;
+				margin-left: 5px;
+			}
+
+			.nom_restau i {
+				font-size: 25px;
+				display: flex;
+				align-items: center;
+			}
+
+			.nom_restau a {
+				text-decoration: none;
+				color: black;
+			}
 
 
-	/***************   Le menu   **************/
+		/***************   La carte   **************/
+		.entrées, .plats, .desserts {
+			margin-bottom: 30px;
+		}
+
+			/*********   Les titres  ********/
+			.titre {
+				margin-bottom: 20px;
+			}
+				h2 {
+					margin-bottom: 5px;
+					font-size: 17px;
+					font-weight: 300;
+				}
+
+				.trait_vert {
+					border-bottom: #99E2D0 4px solid;
+					width: 40px;
+				}
 
 
+			/*********   Les "cards" ********/
+			.card {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				background-color: white;
+				border-radius: 15px;
+				box-shadow: 0px 2px 7px #CECECE;
+				padding: 12px 20px 10px 12px;
+				margin-bottom: 15px;
+				text-decoration: none;
+				color: black;
+				flex-wrap: nowrap;
+			}
 
+				.nom_du_plat {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+					.nom_du_plat_titre {
+						font-size: 17px;
+						font-weight: 700;
+						margin-bottom: 4px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+					.nom_du_plat_description {
+						font-size: 15px;
+						font-weight: 300;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+
+				.prix {
+					display: flex;
+					align-items: flex-end;
+					font-weight: 700;
+					font-size: 15px;
+					margin-left: 15px;
+				}
+
+			
+			/*********   Bouton "COMMANDER" ********/
+			.boutton_commander {
+				width: 50%;
+				margin: 10px auto;
+				text-decoration: none;
+				text-align: center;
+				color: white;
+				font-size: 14px;
+				font-weight: 500;
+				background: linear-gradient(175deg, #FF79DA, #9356DC);
+				border-radius: 30px;
+				padding: 15px 18px;
+				box-shadow: 0px 5px 8px #cecece;
+			}
 
 
 
