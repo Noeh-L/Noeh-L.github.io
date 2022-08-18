@@ -21,6 +21,7 @@ header {
 		font-size: 24px;
 		color: black;
 		margin-left: 30px;
+		transition: all 0.2s;
 	}
 	header i:hover {
 		color: #FF79DA;
@@ -62,6 +63,7 @@ main {
 			justify-content: space-between;
 			padding-right: 15px;
 			margin-bottom: 40px;
+			position: relative;
 		}
 
 			h1 {
@@ -73,14 +75,23 @@ main {
 
 			.nom_restau i {
 				font-size: 25px;
-				display: flex;
-				align-items: center;
+				position: absolute;
+				right: 15px;
+				top: 2px
 			}
-
-			.nom_restau a {
-				text-decoration: none;
-				color: black;
-			}
+				.nom_restau .fa-solid {
+					background: linear-gradient(175deg, #FF79DA, #9356DC);
+					background-clip: text;
+					-webkit-background-clip: text;
+					color: transparent;
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+				}
+				.nom_restau .fa-solid:hover {
+					opacity: 1;
+					transform: scale(1.1);
+					cursor: pointer;
+				}
 
 
 		/***************   La carte   **************/
@@ -159,6 +170,11 @@ main {
 				border-radius: 30px;
 				padding: 15px 18px;
 				box-shadow: 0px 5px 8px #cecece;
+				transition: all 0.3s;
+			}
+			.boutton_commander:hover {
+				opacity: 0.8;
+				box-shadow: 2px 5px 8px #a3a2a2;
 			}
 
 
