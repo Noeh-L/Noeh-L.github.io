@@ -99,6 +99,25 @@ main {
 			margin-bottom: 30px;
 		}
 
+		.entrées {
+			animation: apparition 0.5s both;
+		}
+		.plats {
+			animation: apparition 1s 0.2s both;
+		}
+		.desserts {
+			animation: apparition 1.5s 0.4s both;
+		}
+		@keyframes apparition {
+			from { 
+				opacity: 0;
+				transform: translateY(25%);
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
 			/*********   Les titres  ********/
 			.titre {
 				margin-bottom: 20px;
@@ -119,25 +138,27 @@ main {
 			.card {
 				width: 100%;
 				display: flex;
-				justify-content: space-between;
 				background-color: white;
 				border-radius: 15px;
 				box-shadow: 0px 2px 7px #CECECE;
-				padding: 12px 20px 10px 12px;
 				margin-bottom: 15px;
 				text-decoration: none;
 				color: black;
 				flex-wrap: nowrap;
+				overflow: hidden;
 			}
-
 				.nom_du_plat {
 					overflow: hidden;
 					text-overflow: ellipsis;
+					padding: 12px 20px 10px 12px;
 				}
 					.nom_du_plat_titre {
 						font-size: 17px;
 						font-weight: 700;
 						margin-bottom: 4px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
 					}
 
 					.nom_du_plat_description {
@@ -153,7 +174,36 @@ main {
 					align-items: flex-end;
 					font-weight: 700;
 					font-size: 15px;
-					margin-left: 15px;
+					padding: 0 15px 10px 0;
+					margin-left: auto;
+				}
+				.coche {
+					background-color: #99E2D0;
+					min-width: 4rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-right: -4rem;
+					transition: margin-right 0.3s;
+				}
+				.card:hover .coche {
+					margin-right: 0;
+				}
+				.coche i {
+					color: white;
+					font-size: 1.6rem;
+					font-weight: 900;
+				}
+				.card:hover i {
+					animation: spin_check 0.5s ;
+				}
+				@keyframes spin_check {
+					0% {
+						transform: rotate(-330deg);
+					}
+					100% {
+						transform: rotate(0deg);
+					}
 				}
 
 			
