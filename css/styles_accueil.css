@@ -21,7 +21,7 @@ p, h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disappear 0.3s 1.7s forwards;
+    animation: disappear 0.3s 1s forwards;
 }
     .loader_spinner {
         width: 3em;
@@ -280,15 +280,9 @@ main {
                     font-weight: 300;
                     font-size: 15px;
                 }
-                .card_body .fav {
-                    background-color: blue;
-                    width: 2rem;
-                    height: 2rem;
-                    position: absolute;
-                    inset: 0;
-                }
                 .card_body i {
                     font-size: 25px;
+                    padding: 1px;
                     position: absolute;
                     right: 30px;
                 }
@@ -302,15 +296,17 @@ main {
                     }
                     .card_body .fa-solid:hover {                       
                         opacity: 1;
-                        transform: scale(1.1);
+                        transform: scale(1.08);
                     }
 
 
 
 /***************   FOOTER   ****************/
 footer {
-    width: 100%;
     background-color: #353535;
+}
+.footer_body {
+    width: 100%;
     padding: 10px 0px 35px 20px;
     display: flex;
     flex-direction: column;
@@ -380,8 +376,8 @@ footer {
         margin: 40px auto;
     }
         .fonctionnement h2 {
-            margin-left: 330px;
-            width: 75%;
+            width: 65%;
+            margin: auto;
         }
         .deck_fonctionnement {
             flex-direction: row;
@@ -397,11 +393,11 @@ footer {
             }
 
     .restaurants {
-        padding: 0;
+        padding: 0 0 75px 0;
     }
         .restaurants h2 {
-            width: 75%;
-            margin: 40px 0 30px 330px;
+            width: 65%;
+            margin: 40px auto 30px;
         }
 
         .deck_restaurants {
@@ -416,7 +412,9 @@ footer {
                 margin: 0px 15px 30px 15px;
             }
 
-    footer {
-        padding-left: 117px;
+    .footer_body {
+        padding-left: 40px;
+        width: 67%;
+        margin: auto;
     }
 }
